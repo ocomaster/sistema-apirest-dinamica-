@@ -1,0 +1,105 @@
+[07-Jul-2023 06:38:07 Europe/Berlin] PHP Warning:  include(rotes/routes.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\apirest-dinaminca\controllers\routes.controller.php on line 5
+[07-Jul-2023 06:38:07 Europe/Berlin] PHP Warning:  include(): Failed opening 'rotes/routes.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\apirest-dinaminca\controllers\routes.controller.php on line 5
+[07-Jul-2023 06:38:29 Europe/Berlin] PHP Warning:  include(rotes/routes.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\apirest-dinaminca\controllers\routes.controller.php on line 5
+[07-Jul-2023 06:38:29 Europe/Berlin] PHP Warning:  include(): Failed opening 'rotes/routes.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\apirest-dinaminca\controllers\routes.controller.php on line 5
+[07-Jul-2023 18:18:23 Europe/Berlin] PHP Warning:  include(./servicios/get.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\apirest-dinaminca\routes\routes.php on line 32
+[07-Jul-2023 18:18:23 Europe/Berlin] PHP Warning:  include(): Failed opening './servicios/get.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\apirest-dinaminca\routes\routes.php on line 32
+[07-Jul-2023 18:38:26 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "GetController" not found in C:\xampp\htdocs\apirest-dinaminca\routes\servicios\get.php:6
+Stack trace:
+#0 C:\xampp\htdocs\apirest-dinaminca\routes\routes.php(32): include()
+#1 C:\xampp\htdocs\apirest-dinaminca\controllers\routes.controller.php(5): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\apirest-dinaminca\index.php(22): RoutesController->index()
+#3 {main}
+  thrown in C:\xampp\htdocs\apirest-dinaminca\routes\servicios\get.php on line 6
+[07-Jul-2023 18:40:54 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'database-1.cursos' doesn't exist in C:\xampp\htdocs\apirest-dinaminca\models\get.model.php:10
+Stack trace:
+#0 C:\xampp\htdocs\apirest-dinaminca\models\get.model.php(10): PDOStatement->execute()
+#1 C:\xampp\htdocs\apirest-dinaminca\controllers\get.controller.php(6): GetModel::getData('cursos')
+#2 C:\xampp\htdocs\apirest-dinaminca\routes\servicios\get.php(8): GetController::getData('cursos')
+#3 C:\xampp\htdocs\apirest-dinaminca\routes\routes.php(32): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\apirest-dinaminca\controllers\routes.controller.php(5): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirest-dinaminca\index.php(22): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\apirest-dinaminca\models\get.model.php on line 10
+[07-Jul-2023 18:45:16 Europe/Berlin] PHP Warning:  Undefined array key "database-1" in C:\xampp\htdocs\apirest-dinaminca\models\connection.php on line 27
+[07-Jul-2023 18:45:16 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected in C:\xampp\htdocs\apirest-dinaminca\models\get.model.php:10
+Stack trace:
+#0 C:\xampp\htdocs\apirest-dinaminca\models\get.model.php(10): PDOStatement->execute()
+#1 C:\xampp\htdocs\apirest-dinaminca\controllers\get.controller.php(6): GetModel::getData('courses')
+#2 C:\xampp\htdocs\apirest-dinaminca\routes\servicios\get.php(8): GetController::getData('courses')
+#3 C:\xampp\htdocs\apirest-dinaminca\routes\routes.php(32): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\apirest-dinaminca\controllers\routes.controller.php(5): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirest-dinaminca\index.php(22): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\apirest-dinaminca\models\get.model.php on line 10
+[07-Jul-2023 19:24:35 Europe/Berlin] PHP Parse error:  syntax error, unexpected identifier "getData", expecting variable or "$" in C:\xampp\htdocs\apirest-dinaminca\routes\servicios\get.php on line 7
+[07-Jul-2023 19:55:54 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'database-1.coursesg' doesn't exist in C:\xampp\htdocs\apirest-dinaminca\models\get.model.php:10
+Stack trace:
+#0 C:\xampp\htdocs\apirest-dinaminca\models\get.model.php(10): PDOStatement->execute()
+#1 C:\xampp\htdocs\apirest-dinaminca\controllers\get.controller.php(6): GetModel::getData('coursesg')
+#2 C:\xampp\htdocs\apirest-dinaminca\routes\servicios\get.php(9): GetController::getData('coursesg')
+#3 C:\xampp\htdocs\apirest-dinaminca\routes\routes.php(32): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\apirest-dinaminca\controllers\routes.controller.php(5): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirest-dinaminca\index.php(22): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\apirest-dinaminca\models\get.model.php on line 10
+[07-Jul-2023 20:09:39 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'favicon.ico' doesn't exist in C:\xampp\htdocs\apirest-dinaminca\models\get.model.php:10
+Stack trace:
+#0 C:\xampp\htdocs\apirest-dinaminca\models\get.model.php(10): PDOStatement->execute()
+#1 C:\xampp\htdocs\apirest-dinaminca\controllers\get.controller.php(6): GetModel::getData('favicon.ico')
+#2 C:\xampp\htdocs\apirest-dinaminca\routes\servicios\get.php(9): GetController::getData('favicon.ico')
+#3 C:\xampp\htdocs\apirest-dinaminca\routes\routes.php(32): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\apirest-dinaminca\controllers\routes.controller.php(5): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirest-dinaminca\index.php(22): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\apirest-dinaminca\models\get.model.php on line 10
+[07-Jul-2023 20:09:46 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'favicon.ico' doesn't exist in C:\xampp\htdocs\apirest-dinaminca\models\get.model.php:10
+Stack trace:
+#0 C:\xampp\htdocs\apirest-dinaminca\models\get.model.php(10): PDOStatement->execute()
+#1 C:\xampp\htdocs\apirest-dinaminca\controllers\get.controller.php(6): GetModel::getData('favicon.ico')
+#2 C:\xampp\htdocs\apirest-dinaminca\routes\servicios\get.php(9): GetController::getData('favicon.ico')
+#3 C:\xampp\htdocs\apirest-dinaminca\routes\routes.php(32): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\apirest-dinaminca\controllers\routes.controller.php(5): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirest-dinaminca\index.php(22): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\apirest-dinaminca\models\get.model.php on line 10
+[07-Jul-2023 20:09:48 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'favicon.ico' doesn't exist in C:\xampp\htdocs\apirest-dinaminca\models\get.model.php:10
+Stack trace:
+#0 C:\xampp\htdocs\apirest-dinaminca\models\get.model.php(10): PDOStatement->execute()
+#1 C:\xampp\htdocs\apirest-dinaminca\controllers\get.controller.php(6): GetModel::getData('favicon.ico')
+#2 C:\xampp\htdocs\apirest-dinaminca\routes\servicios\get.php(9): GetController::getData('favicon.ico')
+#3 C:\xampp\htdocs\apirest-dinaminca\routes\routes.php(32): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\apirest-dinaminca\controllers\routes.controller.php(5): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirest-dinaminca\index.php(22): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\apirest-dinaminca\models\get.model.php on line 10
+[07-Jul-2023 20:14:52 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'database-1.coursesf' doesn't exist in C:\xampp\htdocs\apirest-dinaminca\models\get.model.php:10
+Stack trace:
+#0 C:\xampp\htdocs\apirest-dinaminca\models\get.model.php(10): PDOStatement->execute()
+#1 C:\xampp\htdocs\apirest-dinaminca\controllers\get.controller.php(6): GetModel::getData('coursesf')
+#2 C:\xampp\htdocs\apirest-dinaminca\routes\servicios\get.php(9): GetController::getData('coursesf')
+#3 C:\xampp\htdocs\apirest-dinaminca\routes\routes.php(32): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\apirest-dinaminca\controllers\routes.controller.php(5): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirest-dinaminca\index.php(22): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\apirest-dinaminca\models\get.model.php on line 10
+[07-Jul-2023 20:14:53 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'favicon.ico' doesn't exist in C:\xampp\htdocs\apirest-dinaminca\models\get.model.php:10
+Stack trace:
+#0 C:\xampp\htdocs\apirest-dinaminca\models\get.model.php(10): PDOStatement->execute()
+#1 C:\xampp\htdocs\apirest-dinaminca\controllers\get.controller.php(6): GetModel::getData('favicon.ico')
+#2 C:\xampp\htdocs\apirest-dinaminca\routes\servicios\get.php(9): GetController::getData('favicon.ico')
+#3 C:\xampp\htdocs\apirest-dinaminca\routes\routes.php(32): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\apirest-dinaminca\controllers\routes.controller.php(5): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirest-dinaminca\index.php(22): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\apirest-dinaminca\models\get.model.php on line 10
+[07-Jul-2023 20:15:19 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'favicon.ico' doesn't exist in C:\xampp\htdocs\apirest-dinaminca\models\get.model.php:10
+Stack trace:
+#0 C:\xampp\htdocs\apirest-dinaminca\models\get.model.php(10): PDOStatement->execute()
+#1 C:\xampp\htdocs\apirest-dinaminca\controllers\get.controller.php(6): GetModel::getData('favicon.ico')
+#2 C:\xampp\htdocs\apirest-dinaminca\routes\servicios\get.php(9): GetController::getData('favicon.ico')
+#3 C:\xampp\htdocs\apirest-dinaminca\routes\routes.php(32): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\apirest-dinaminca\controllers\routes.controller.php(5): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirest-dinaminca\index.php(22): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\apirest-dinaminca\models\get.model.php on line 10
